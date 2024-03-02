@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'lots2do-be',
         'USER': 'admin',
         'PASSWORD': 'HumberR0cks!',
-        'HOST': '127.0.0.1',
+        'HOST': 'ec2-34-231-148-3.compute-1.amazonaws.com',
         'PORT': '3306',
     }
 }

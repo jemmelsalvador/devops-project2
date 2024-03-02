@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lots2do-be-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lots2do-be
+  template:
+    metadata:
+      labels:
+        app: lots2do-be
+    spec:
+      containers:
+      - name: lots2do-be
+        image: jimtosinhumber/lots2do-be:1.0
+        ports:
+        - containerPort: 3306
+        env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: HumberROcks!

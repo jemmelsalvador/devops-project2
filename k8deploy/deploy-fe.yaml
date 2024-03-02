@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lots2do-fe-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lots2do-fe
+  template:
+    metadata:
+      labels:
+        app: lots2do-fe
+    spec:
+      containers:
+      - name: lots2do-fe
+        image: jimtosinhumber/lots2do-fe:1.0
+        ports:
+        - containerPort: 8000
