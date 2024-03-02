@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: lots2do-fe-deploy
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: lots2do-fe
