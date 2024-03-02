@@ -1,0 +1,9 @@
+body,h1,h2,h3,h4,h5,h6 {font-family:"Lato",sans-serif}
+.w3-bar,h1,button {font-family:"Montserrat",sans-serif}
+.fa-anchor,.fa-coffee,.fa-book,.fa-trash,.fa-key,.fa-user-plus,.fa-check,.fa-ban  {font-size:200px}
+.fa-plus-circle,.fa-external-link {margin-left:10px;}
+
+input {width:500px;}
+.flex-div {display:flex;}
+.left-column-div {width:120px;}
+.small-left-column-div {width:80px;}
