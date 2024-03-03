@@ -17,3 +17,15 @@ spec:
         image: jimtosinhumber/lots2do-fe:1.0
         ports:
         - containerPort: 8000
+        command:
+          - "sh"
+          - "-c"
+          - |
+            python manage.py migrate
+            cat <<EOF | python manage.py shell
+            from django.contrib.auth import get_user_model
+            User = get_user_model()  # get the currently active user model,
+            User.objects.filter(username='admin').exists() or \
+              User.objects.create_superuser('humberadmin', 'jimtosin.humber@gmail.com', 'HumberR0cks!')
+            EOF
+            python manage.py runserver 0.0.0.0:8000

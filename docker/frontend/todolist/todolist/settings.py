@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'lots2do-be',
         'USER': 'admin',
         'PASSWORD': 'HumberR0cks!',
-        'HOST': 'ec2-34-231-148-3.compute-1.amazonaws.com',
+        'HOST': 'lots2do-be.default.svc.cluster.local',
         'PORT': '3306',
     }
 }
