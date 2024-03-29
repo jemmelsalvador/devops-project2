@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-push:
-    runs-on: self-hosted # Test again
+    runs-on: self-hosted # Test again!
 
     steps:
       - name: Checkout code
