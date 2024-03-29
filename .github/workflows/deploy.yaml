@@ -18,10 +18,10 @@ jobs:
         working-directory: docker/frontend
         run: |
           docker build -t jimtosinhumber/lots2do-fe .
-          docker push jimtosinhumber/lots2do-fe
+          docker push jimtosinhumber/lots2do-fe:1.0
 
       - name: Build and push backend image
         working-directory: docker/backend
         run: |
           docker build -t jimtosinhumber/lots2do-be .
-          docker push jimtosinhumber/lots2do-be
+          docker push jimtosinhumber/lots2do-be:1.0
