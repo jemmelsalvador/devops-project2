@@ -8,7 +8,7 @@ spec:
     namespace: default
   source:
     repoURL: 'https://github.com/jimtosin-humber/devops-project2.git'
-    path: ~/devops-project2/k8s-helm
+    path: k8s-helm
     targetRevision: main
     helm:
       valueFiles:
