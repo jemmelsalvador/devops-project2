@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: lots2do
+  name: lots2do # test
 spec:
   destination:
     name: ''
