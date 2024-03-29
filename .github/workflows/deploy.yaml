@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   build-and-push:
-    runs-on: ip-172-31-80-99
+    runs-on: self-hosted
 
     steps:
       - name: Checkout code
