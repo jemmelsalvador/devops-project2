@@ -1,22 +1,15 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Application
-metadata:
-  name: lots2do
-spec:
-  destination:
-    name: ''
-    namespace: default
-    server: 'https://kubernetes.default.svc'
-  source:
-    path: k8s-helm
-    repoURL: 'https://github.com/jimtosin-humber/devops-project2'
-    targetRevision: HEAD
-    helm:
-      valueFiles:
-        - values.yaml
-  sources: []
-  project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+project: default
+source:
+  repoURL: 'https://github.com/jimtosin-humber/devops-project2'
+  path: k8s-helm
+  targetRevision: HEAD
+  helm:
+    valueFiles:
+      - values.yaml
+destination:
+  server: 'https://kubernetes.default.svc'
+  namespace: default
+syncPolicy:
+  automated:
+    prune: true
+    selfHeal: true
