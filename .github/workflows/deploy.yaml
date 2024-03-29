@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Login to DockerHub
-        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login --username ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login
 
       - name: Build and push frontend image
         working-directory: docker/frontend
