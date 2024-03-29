@@ -4,15 +4,17 @@ metadata:
   name: lots2do
 spec:
   destination:
-    server: 'https://kubernetes.default.svc'
+    name: ''
     namespace: default
+    server: 'https://kubernetes.default.svc'
   source:
-    repoURL: 'https://github.com/jimtosin-humber/devops-project2.git'
     path: k8s-helm
-    targetRevision: main
+    repoURL: 'https://github.com/jimtosin-humber/devops-project2'
+    targetRevision: HEAD
     helm:
       valueFiles:
         - values.yaml
+  sources: []
   project: default
   syncPolicy:
     automated:
