@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: lots2do-be
-        image: jimtosinhumber/lots2do-be:1.0
+        image: jimtosinhumber/lots2do-be:latest
         ports:
         - containerPort: 3306
         env:

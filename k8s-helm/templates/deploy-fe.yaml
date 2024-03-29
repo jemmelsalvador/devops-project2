@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: lots2do-fe
-        image: jimtosinhumber/lots2do-fe:1.0
+        image: jimtosinhumber/lots2do-fe:latest
         ports:
         - containerPort: 8000
         command:
